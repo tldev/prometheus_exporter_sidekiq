@@ -3,7 +3,9 @@ RSpec.describe PrometheusExporterSidekiq do
     expect(PrometheusExporterSidekiq::VERSION).not_to be nil
   end
 
-  it "does something useful" do
-    expect(false).to eq(false)
+  describe "#type" do
+    it "has as type" do
+      expect(described_class.type).to eq("sidekiq_global_stats")
+    end
   end
 end

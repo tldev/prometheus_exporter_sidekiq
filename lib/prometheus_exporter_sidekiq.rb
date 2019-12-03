@@ -1,3 +1,5 @@
+require "prometheus_exporter_sidekiq/collector"
+require "prometheus_exporter_sidekiq/instrumentation"
 require "prometheus_exporter_sidekiq/version"
 
 module PrometheusExporterSidekiq

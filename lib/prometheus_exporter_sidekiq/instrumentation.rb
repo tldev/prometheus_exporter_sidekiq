@@ -5,7 +5,7 @@ module PrometheusExporterSidekiq
   class Instrumentation
     SIDEKIQ_STATS = %i[failed processed retry_size dead_size scheduled_size workers_size].freeze
 
-    def self.start(client: nil, frequency: 10) }
+    def self.start(client: nil, frequency: 10)
       process_collector = new
       client ||= PrometheusExporter::Client.default
 

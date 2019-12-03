@@ -1,5 +1,8 @@
 # frozen_string_literal: true
 
+require "prometheus_exporter"
+require "prometheus_exporter/server"
+
 module PrometheusExporterSidekiq
 
   class Collector < PrometheusExporter::Server::TypeCollector
