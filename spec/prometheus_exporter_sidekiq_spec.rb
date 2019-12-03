@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 RSpec.describe PrometheusExporterSidekiq do
   it "has a version number" do
     expect(PrometheusExporterSidekiq::VERSION).not_to be nil
